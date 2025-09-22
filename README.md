@@ -1,12 +1,30 @@
-# React + Vite
+# Memory Click Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A memory-based click game built with React, Vite, and Tailwind CSS. Test your memory by clicking images without repeating them. Track your current score and best score as you play.
 
-Currently, two official plugins are available:
+## Demo
+[View Live Here ](https://memory-card-steel-pi.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="1897" height="920" alt="Screenshot 2025-09-22 192125" src="https://github.com/user-attachments/assets/a66f38f4-4c3b-4afc-ad28-b4cd9f5be511" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features 
+
+- Click on images to increase your current score.
+- Clicking the same image twice resets the current score.
+- Best score updates automatically when you make a new high score.
+- Responsive grid layout using Tailwind CSS.
+- Custom font applied globally.
+
+## Technologies Used
+- React - Frontend framework
+- Vite- Build tool for React
+- Tailwind CSS - Utility first CSS framework
+- Vercel - Deployement
+- Custom Fonts - Avatar Last Airbender font 
+
+## Usage 
+- Click on any image.
+- Each unique image click increases your current score.
+- Clicking the same image twice resets the current score.
+- Try to beat your best score!
