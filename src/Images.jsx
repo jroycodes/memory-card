@@ -53,11 +53,9 @@ export default function Images() {
 
   return (
     <>
-      <div className="flex justify-between m-4 font-bold">
+      <div className="font-avatar text-xl  flex justify-between m-4">
         <div>
-          <h1 className="text-4xl font-bold mb-4  ">
-            Avatar Memory Game
-          </h1>
+          <h1 className="text-4xl mb-4">Avatar Memory Game</h1>
           <p>
             Get points by clicking on an image but don't click on any more than
             once!

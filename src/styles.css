@@ -1,2 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "AvatarAirbender";
+  src: url("./assets/fonts/Avatar Airbender.woff2") format("woff2"),
+    url("./assets/fonts/Avatar Airbender.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-avatar {
+  font-family: "AvatarAirbender", sans-serif;
+}
