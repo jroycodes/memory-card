@@ -5,8 +5,7 @@ A memory-based click game built with React, Vite, and Tailwind CSS. Test your me
 ## Demo
 [View Live Here ](https://memory-card-steel-pi.vercel.app/)
 
-<img width="1897" height="920" alt="Screenshot 2025-09-22 192125" src="https://github.com/user-attachments/assets/a66f38f4-4c3b-4afc-ad28-b4cd9f5be511" />
-
+<img width="1895" height="923" alt="Screenshot 2025-09-22 194002" src="https://github.com/user-attachments/assets/a0aae651-2c3a-47f5-aaad-d43537d5a3f4" />
 
 ## Features 
 
