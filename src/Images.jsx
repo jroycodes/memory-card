@@ -52,28 +52,41 @@ export default function Images() {
   }
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="p-4 mb-4 w-full text-center">
-        <p>Current Score {currentScore}</p>
-        <p>Best Score {bestScore}</p>
+    <>
+      <div className="flex justify-between m-4 font-bold">
+        <div>
+          <h1 className="text-4xl font-bold mb-4  ">
+            Avatar Memory Game
+          </h1>
+          <p>
+            Get points by clicking on an image but don't click on any more than
+            once!
+          </p>
+        </div>
+        <div>
+          <p>Current Score {currentScore}</p>
+          <p>Best Score {bestScore}</p>
+        </div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-        {images.map((src, index) => {
-          const name = src.split("/").pop().replace(".jpg", "");
-          return (
-            <div
-              key={index}
-              className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 mx-auto bg-center bg-no-repeat bg-contain border rounded cursor-pointer"
-              style={{ backgroundImage: `url(${src})` }}
-              onClick={() => handleClick(src)}
-            >
-              <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-xs text-center py-1 rounded-b">
-                {name}
+      <div className="flex flex-col items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {images.map((src, index) => {
+            const name = src.split("/").pop().replace(".jpg", "");
+            return (
+              <div
+                key={index}
+                className="relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-50 lg:h-50 mx-auto bg-center bg-no-repeat bg-contain rounded cursor-pointer"
+                style={{ backgroundImage: `url(${src})` }}
+                onClick={() => handleClick(src)}
+              >
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-md text-center py-1 rounded-b">
+                  {name}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
