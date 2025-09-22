@@ -53,7 +53,7 @@ export default function Images() {
 
   return (
     <>
-      <div className="font-avatar text-xl  flex justify-between m-4">
+      <div className="font-avatar text-xl flex justify-between m-4 p-8 sticky top-0 bg-white/50 backdrop-blur-md z-50 shadow">
         <div>
           <h1 className="text-4xl mb-4">Avatar Memory Game</h1>
           <p>
