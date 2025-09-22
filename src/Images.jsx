@@ -45,8 +45,15 @@ export default function Images() {
       setCurrentScore(0);
       setClickedImages(new Set());
     } else {
-      setCurrentScore((prev) => prev + 1);
+      const newScore = currentScore + 1;
+      setCurrentScore(newScore);
       setClickedImages((prev) => new Set(prev).add(image));
+
+      if (newScore === allImages.length) {
+        alert("You won!! 🎊");
+        setCurrentScore(0);
+        setClickedImages(new Set());
+      }
     }
     setImages(shuffleArray(images));
   }
